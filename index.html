@@ -63,13 +63,23 @@
     </header>
 
     <script>
-      document
-        .getElementById("menu-toggle")
-        .addEventListener("click", function () {
-          const mobileMenu = document.getElementById("mobile-menu");
-          mobileMenu.classList.toggle("hidden");
+        document
+          .getElementById("menu-toggle")
+          .addEventListener("click", function () {
+            const mobileMenu = document.getElementById("mobile-menu");
+            mobileMenu.classList.toggle("hidden");
+          });
+      
+        // 新增點選menu項目後隱藏menu的功能
+        const menuLinks = document.querySelectorAll("#mobile-menu a");
+        menuLinks.forEach(link => {
+          link.addEventListener("click", function () {
+            const mobileMenu = document.getElementById("mobile-menu");
+            mobileMenu.classList.add("hidden"); // 點選後隱藏menu
+          });
         });
-    </script>
+      </script>
+      
 
     <!-- Hero Section -->
     <section class="relative bg-white">
@@ -101,7 +111,7 @@
     </section>
 
     <!-- About Us -->
-    <section id="about" class="py-16 px-6 max-w-5xl mx-auto">
+    <section id="about" class="py-16 px-6 max-w-5xl mx-auto" style="margin-top: 12rem;">
       <div class="flex items-start space-x-6">
         <div>
           <h2 class="text-2xl font-bold mb-4">關於我們</h2>
@@ -118,7 +128,7 @@
     </section>
 
 <!-- Services -->
-<section id="services" class="bg-gray-100 py-16 px-6">
+<section id="services" class="bg-gray-100 py-16 px-6" style="margin-top: 12rem;">
     <div class="max-w-5xl mx-auto">
       <h2 class="text-2xl font-bold mb-8 text-center">我們的服務</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
@@ -146,7 +156,7 @@
   </section>
 
     <!-- Process -->
-    <section id="process" class="py-16 px-6 max-w-5xl mx-auto">
+    <section id="process" class="py-16 px-6 max-w-5xl mx-auto" style="margin-top: rem;">
           <h2 class="text-2xl font-bold mb-4">送修流程</h2>
           <ol class="list-decimal list-inside space-y-2">
             <li>線上預約 / LINE / 電話聯繫</li>
