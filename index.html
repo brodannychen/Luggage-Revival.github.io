@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>旅箱再造所｜Luggage Revival</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans text-gray-800 bg-[#F5F3EF]">
+    <!-- Nav Bar -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <div class="flex items-center space-x-3">
+          <img
+          src="/mnt/data/A_website_homepage_screenshot_for_\"旅箱再造所_Luggage_R.png"
+          alt="Logo" class="h-10 w-10 object-contain">
+          <span class="text-xl font-bold">旅箱再造所</span>
+        </div>
+        <!-- Desktop Nav -->
+        <nav class="space-x-6 hidden md:flex">
+          <a href="#about" class="hover:text-green-700">關於我們</a>
+          <a href="#services" class="hover:text-green-700">服務內容</a>
+          <a href="#process" class="hover:text-green-700">送修流程</a>
+          <a href="#contact" class="hover:text-green-700">聯絡我們</a>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Nav -->
+      <nav id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <a href="#about" class="block py-2 text-gray-800 hover:text-green-700"
+          >關於我們</a
+        >
+        <a
+          href="#services"
+          class="block py-2 text-gray-800 hover:text-green-700"
+          >服務內容</a
+        >
+        <a href="#process" class="block py-2 text-gray-800 hover:text-green-700"
+          >送修流程</a
+        >
+        <a href="#contact" class="block py-2 text-gray-800 hover:text-green-700"
+          >聯絡我們</a
+        >
+      </nav>
+    </header>
+
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="relative bg-white">
+      <img src="./img/hero.png"旅箱再造所_Luggage_R.png" alt="Hero Image"
+      class="w-full h-[60vh] object-cover">
+      <div
+        class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white text-center p-4"
+      >
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">
+          讓行李箱重拾旅程的價值
+        </h1>
+        <p class="text-lg md:text-xl mb-6">
+          Give Your Luggage a Second Journey
+        </p>
+        <div class="flex space-x-4">
+          <a
+            href="#booking"
+            class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-xl text-white text-lg"
+            >預約維修</a
+          >
+          <a
+            href="https://line.me/R/ti/p/@luggagerepair"
+            target="_blank"
+            class="bg-white text-green-700 border border-green-600 px-6 py-3 rounded-xl text-lg"
+            >LINE 線上預約</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-16 px-6 max-w-5xl mx-auto">
+      <div class="flex items-start space-x-6">
+        <div>
+          <h2 class="text-2xl font-bold mb-4">關於我們</h2>
+          <p class="mb-2">
+            旅箱再造所，是一個以「惜物精神」為出發點的行李箱維修服務平台。我們相信，每一咖旅箱，承載的不只是物品，更是一段段動人的旅程記憶。
+          </p>
+          <p class="text-sm text-gray-600">
+            At Luggage Revival, we believe every suitcase tells a story. Our
+            mission is to repair, restore, and help it continue the journey with
+            you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="bg-gray-100 py-16 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4">我們的服務</h2>
+        <ul class="list-disc list-inside">
+          <li>拉鍊更換／拉桿維修／輪子更換／外殼修復</li>
+          <li>維修評估、到府取件（需預約）</li>
+          <li>支援品牌：Samsonite、Rimowa、ACE 等</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="py-16 px-6 max-w-5xl mx-auto">
+          <h2 class="text-2xl font-bold mb-4">送修流程</h2>
+          <ol class="list-decimal list-inside space-y-2">
+            <li>線上預約 / LINE / 電話聯繫</li>
+            <li>傳送照片，初步估價</li>
+            <li>到府取件 or 親送門市</li>
+            <li>維修完畢後通知付款＆領件</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+  <section id="booking" class="bg-green-50 py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-4">線上預約</h2>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-example-form-link/viewform" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4 rounded-xl">前往填寫預約表單</a>
+    </div>
+  </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-gray-100 py-16 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4">聯絡我們</h2>
+        <p>📞 電話：0900-000-000</p>
+        <p>📱 LINE：@luggagerepair</p>
+        <p>📍 台北市大安區 OO 路 XX 號</p>
+        <p>📩 Email：fix@luggagelove.tw</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 px-6 max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold mb-4">常見問題</h2>
+      <div class="space-y-4">
+        <div>
+          <p class="font-semibold">Q：維修需要幾天？</p>
+          <p>A：平均約3-5個工作天，視零件而定。</p>
+        </div>
+        <div>
+          <p class="font-semibold">Q：可以維修非知名品牌嗎？</p>
+          <p>A：可以，我們評估後會提供報價與建議。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+      <p>© 2025 旅箱再造所 Luggage Revival. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
